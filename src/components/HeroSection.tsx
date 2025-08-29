@@ -11,7 +11,7 @@ export const HeroSection = () => {
             <div className="space-y-4 sm:space-y-6">
               <div className="flex items-center gap-2 text-primary justify-center lg:justify-start">
                 <Terminal className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="text-xs sm:text-sm font-mono">~/portfolio $</span>
+                <span className="text-xs sm:text-sm font-mono">Chetan Sen</span>
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                 <span className="bg-gradient-hero bg-clip-text text-transparent">
@@ -26,16 +26,31 @@ export const HeroSection = () => {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+            {/* Download CV Button */}
+            <a
+              href="/assets/chetanLatestResume.pdf"
+              download="Chetan_Sen_Resume.pdf"
+              className="w-full sm:w-auto"
+            >
               <Button variant="hero" size="lg" className="group w-full sm:w-auto">
                 <Download className="w-4 h-4 group-hover:animate-bounce" />
                 Download CV
               </Button>
+            </a         >
+
+            {/* Get In Touch Button */}
+            <a
+              href="mailto:chetansen2004@gmail.com"
+              className="w-full sm:w-auto"
+            >
               <Button variant="outline" size="lg" className="w-full sm:w-auto">
                 <Mail className="w-4 h-4" />
                 Get In Touch
               </Button>
-            </div>
+            </a>
+          </div>
+
 
             <div className="flex gap-3 sm:gap-4 justify-center lg:justify-start">
               <Button variant="ghost" size="sm" className="h-10 w-10">
