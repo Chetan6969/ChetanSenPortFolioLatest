@@ -7,12 +7,12 @@ export const AboutSection = () => {
     {
       icon: <Server className="w-6 h-6" />,
       title: "System Administration",
-      description: "5+ years managing Linux servers and infrastructure"
+      description: "Experienced in managing Linux servers and infrastructure"
     },
     {
       icon: <Cloud className="w-6 h-6" />,
       title: "DevOps & Cloud",
-      description: "Expert in Docker, Kubernetes, AWS, and CI/CD pipelines"
+      description: "Sound in Docker, Kubernetes, AWS, and CI/CD pipelines"
     },
     {
       icon: <Code className="w-6 h-6" />,
