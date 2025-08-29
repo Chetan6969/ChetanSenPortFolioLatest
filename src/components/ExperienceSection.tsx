@@ -40,23 +40,22 @@ export const ExperienceSection = () => {
        "Developed HealthHub, a healthcare management platform built during Hackverse 5.0",  
        "Designed features for patient record management, appointment scheduling, and reports",  
        "Implemented a user-friendly interface with secure data handling",  
-       "Focused on improving healthcare accessibility and streamlined digital management"
-
+       "Focused on improving healthcare accessibility and streamlined digital management",
       ],
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS"]
     },
     {
-      title: "Junior Developer",
-      company: "StartupHub",
-      location: "Seattle, WA",
-      period: "2017 - 2018",
+      title: "Thrillx Hackthon",
+      company: "AKS University",
+      location: "Sherganj, Satna, Madhya Pradesh, India",
+      period: "Dec 2024",
       description: [
-        "Built responsive web applications using modern JavaScript frameworks",
-        "Collaborated with design teams to implement pixel-perfect UIs",
-        "Participated in code reviews and agile development processes",
-        "Learned foundational DevOps practices and Linux system administration"
+       "Developed a gamified waste management platform to promote eco-friendly habits",  
+       "Implemented features like waste categorization, reward points, and leaderboards",  
+       "Built the system using React.js frontend and Node.js with Express backend",  
+       "Integrated MongoDB for data storage and Tailwind CSS for a responsive, engaging UI"
       ],
-      technologies: ["JavaScript", "React", "CSS", "Git", "Linux Basics"]
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"]
     }
   ];
 
