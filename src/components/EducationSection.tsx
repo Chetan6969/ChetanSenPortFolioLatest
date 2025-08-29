@@ -26,42 +26,42 @@ export const EducationSection = () => {
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect - Professional",
+      name: "AWS Devops Solutions Architect - Professional",
       issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-PSA-123456",
-      status: "Active"
+      date: "DD-MM-YYYY",
+      credentialId: "0000000",
+      status: "Learning-( Preaparing for certification)"
     },
     {
-      name: "Certified Kubernetes Administrator (CKA)",
+      name: " Kubernetes Administrator (CKA)",
       issuer: "Cloud Native Computing Foundation",
-      date: "2022",
-      credentialId: "CKA-789012",
-      status: "Active"
+      date: "DD-MM-YYYY",
+      credentialId: "CKA-00000",
+      status: "Expert - (Preparing for certification)"
     },
     {
-      name: "Red Hat Certified System Administrator (RHCSA)",
+      name: "Red Hat System Administrator (RHSA)",
       issuer: "Red Hat",
-      date: "2021",
-      credentialId: "RHCSA-345678",
-      status: "Active"
+      date: "DD-MM-YYYY",
+      credentialId: "RHCSA-00000",
+      status: "Sound knowledge - (Preparing for certification)"
     },
     {
-      name: "Docker Certified Associate",
+      name: "Docker Associate",
       issuer: "Docker Inc.",
-      date: "2020",
-      credentialId: "DCA-901234",
-      status: "Active"
+      date: "DD-MM-YYYY",
+      credentialId: "DCA-00000",
+      status: "Sound knowledge - (Preparing for certification)"
     }
   ];
 
   const continuousLearning = [
     "Advanced Kubernetes Administration",
     "Terraform Infrastructure as Code",
-    "Python for DevOps",
+    "Python for DevOps (Scripting & Automation)",
     "Cloud Security Best Practices",
     "Microservices Architecture",
-    "Machine Learning for Operations"
+    "Docker & Kubernities"
   ];
 
   return (
@@ -149,7 +149,7 @@ export const EducationSection = () => {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
-              Currently expanding knowledge in emerging technologies and advanced practices:
+              Currently expanding knowledge in trending technologies and advanced practices:
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
               {continuousLearning.map((topic, index) => (

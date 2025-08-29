@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div className="sm:col-span-2 lg:col-span-1">
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 bg-gradient-primary bg-clip-text text-transparent">
-              John Doe
+              Chetan Sen
             </h3>
             <p className="text-muted-foreground mb-3 sm:mb-4 text-sm sm:text-base">
               System Administrator, DevOps Engineer & Full-Stack Developer passionate about 
