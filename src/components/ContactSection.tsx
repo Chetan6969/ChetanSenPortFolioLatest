@@ -9,19 +9,19 @@ export const ContactSection = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com"
+      value: "chetansen2004@gmail.com",
+      href: "mailto:chetansen2004@gmail.com"
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 62635-87072",
+      href: "tel:+000000000000"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Arjun Nagar, Pateri, Satna, Madhya Pradesh, India",
       href: "#"
     }
   ];
@@ -30,14 +30,14 @@ export const ContactSection = () => {
     {
       icon: <Github className="w-5 h-5" />,
       label: "GitHub",
-      username: "@johndoe",
-      href: "https://github.com/johndoe"
+      username: "@Chetan Sen",
+      href: "https://github.com/Chetan6969"
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LinkedIn",
-      username: "/in/johndoe",
-      href: "https://linkedin.com/in/johndoe"
+      username: "/in/chetansen",
+      href: "https://linkedin.com/in/johndoehttps://www.linkedin.com/in/chetan-sen-749a64284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
   ];
 
