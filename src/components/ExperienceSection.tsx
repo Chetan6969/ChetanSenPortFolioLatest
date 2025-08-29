@@ -5,43 +5,45 @@ import { CalendarDays, MapPin } from "lucide-react";
 export const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior DevOps Engineer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
+      title: "Linux Administrator & DevOps Engineer intern",
+      company: "Rostris PVT Ltd",
+      location: "Bengaluru, KA",
+      period: "2025, Feb - Present",
       description: [
-        "Led infrastructure automation initiatives reducing deployment time by 60%",
-        "Architected and managed Kubernetes clusters serving 100k+ daily users",
-        "Implemented comprehensive monitoring and logging with Prometheus and ELK stack",
-        "Mentored junior developers on DevOps best practices and cloud technologies"
-      ],
-      technologies: ["Kubernetes", "AWS", "Terraform", "Docker", "Jenkins", "Python"]
-    },
-    {
-      title: "Full Stack Developer & SysAdmin",
-      company: "Digital Innovations Inc",
-      location: "Austin, TX",
-      period: "2020 - 2022",
-      description: [
-        "Developed and maintained React-based web applications with Node.js backends",
-        "Managed Linux server infrastructure supporting mission-critical applications",
-        "Automated deployment pipelines using GitLab CI/CD and Docker",
-        "Implemented database optimization strategies improving query performance by 40%"
-      ],
-      technologies: ["React", "Node.js", "PostgreSQL", "Docker", "Linux", "GitLab CI"]
-    },
-    {
-      title: "Linux System Administrator",
-      company: "CloudServe Technologies",
-      location: "Denver, CO",
-      period: "2018 - 2020",
-      description: [
-        "Administered 200+ Linux servers across multiple data centers",
+        "Administered Multiple Linux servers across multiple data centers",
         "Implemented automated backup and disaster recovery solutions",
         "Configured and maintained web servers (Apache, Nginx) and databases",
         "Developed monitoring scripts and automation tools using Bash and Python"
       ],
       technologies: ["Linux", "Bash", "Python", "Nginx", "MySQL", "Zabbix"]
+    },
+    {
+      title: "IBM Nationanl Hackthon 2025",
+      company: "IBM",
+      location: "Bengaluru, KA",
+      period: "6th - 8th Aug, 2025",
+      description: [
+        "Built a custom memory allocator in C++ with a fixed 2MB pool and block-based allocation",  
+        "Implemented allocation strategies including First Fit, Best Fit, and Buddy System",  
+        "Added features for allocation tracking, leak detection, and defragmentation",  
+        "Designed a linked-list block structure for efficient and flexible memory management"
+
+      ],
+      technologies: ["C++", "Makefile", "Linux (Centos 8, Fedora 38)", "Git", "Github" ]
+    },
+    {
+      title: "Hackverse 5.0",
+      company: "NIT Surathkal",
+      location: "Surathkal, KA",
+      period: "10th - 12th Jan 2025",
+      description: [
+       "Developed HealthHub, a healthcare management platform built during Hackverse 5.0",  
+       "Designed features for patient record management, appointment scheduling, and reports",  
+       "Implemented a user-friendly interface with secure data handling",  
+       "Focused on improving healthcare accessibility and streamlined digital management"
+
+      ],
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS"]
     },
     {
       title: "Junior Developer",
