@@ -10,18 +10,18 @@ export const SkillsSection = () => {
         { name: "Linux (Ubuntu, CentOS, RHEL)", level: 95 },
         { name: "Shell Scripting (Bash, Zsh)", level: 90 },
         { name: "Network Configuration", level: 85 },
-        { name: "Security & Hardening", level: 88 },
+        { name: "Security & Hardening", level: 80 },
       ]
     },
     {
       title: "DevOps & Cloud",
       skills: [
-        { name: "Docker & Containerization", level: 92 },
-        { name: "Kubernetes", level: 85 },
-        { name: "AWS (EC2, S3, RDS, Lambda)", level: 88 },
+        { name: "Docker & Containerization", level: 90 },
+        { name: "Kubernetes", level: 80 },
+        { name: "AWS (EC2, S3, RDS, Lambda)", level: 70 },
         { name: "Terraform", level: 80 },
-        { name: "Ansible", level: 85 },
-        { name: "Jenkins/GitLab CI", level: 87 },
+        { name: "Ansible", level: 90 },
+        { name: "Jenkins/GitLab CI", level: 80 },
       ]
     },
     {
@@ -29,16 +29,16 @@ export const SkillsSection = () => {
       skills: [
         { name: "JavaScript/TypeScript", level: 90 },
         { name: "Python", level: 85 },
-        { name: "Go", level: 75 },
+        { name: "C/C++", level: 95 },
         { name: "Bash", level: 95 },
       ]
     },
     {
       title: "Web Development",
       skills: [
-        { name: "React/Next.js", level: 88 },
+        { name: "React/Next.js", level: 85 },
         { name: "Node.js/Express", level: 85 },
-        { name: "PostgreSQL/MongoDB", level: 82 },
+        { name: "PostgreSQL/MongoDB", level: 90 },
         { name: "RESTful APIs", level: 90 },
       ]
     }
