@@ -59,34 +59,36 @@ export const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-card">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <section id="experience" className="py-12 sm:py-16 lg:py-20 bg-gradient-card">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
             Professional <span className="bg-gradient-primary bg-clip-text text-transparent">Experience</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
             A journey through various roles, building expertise across the technology stack
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {experiences.map((exp, index) => (
             <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-soft transition-all duration-300">
-              <CardHeader>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <CardHeader className="pb-4">
+                <div className="flex flex-col gap-4">
                   <div>
-                    <CardTitle className="text-xl mb-2">{exp.title}</CardTitle>
-                    <h4 className="text-lg font-semibold text-primary">{exp.company}</h4>
+                    <CardTitle className="text-lg sm:text-xl mb-2">{exp.title}</CardTitle>
+                    <h4 className="text-base sm:text-lg font-semibold text-primary">{exp.company}</h4>
                   </div>
-                  <div className="flex flex-col md:items-end gap-2">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <CalendarDays className="w-4 h-4" />
-                      {exp.period}
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <MapPin className="w-4 h-4" />
-                      {exp.location}
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                      <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <CalendarDays className="w-4 h-4" />
+                        {exp.period}
+                      </div>
+                      <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <MapPin className="w-4 h-4" />
+                        {exp.location}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -96,13 +98,13 @@ export const ExperienceSection = () => {
                   {exp.description.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                      <span className="text-muted-foreground">{item}</span>
+                      <span className="text-muted-foreground text-xs sm:text-sm">{item}</span>
                     </li>
                   ))}
                 </ul>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {exp.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary" className="bg-gradient-card border-primary/20">
+                    <Badge key={techIndex} variant="secondary" className="bg-gradient-card border-primary/20 text-xs">
                       {tech}
                     </Badge>
                   ))}

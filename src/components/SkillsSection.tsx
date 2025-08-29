@@ -50,31 +50,31 @@ export const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <section id="skills" className="py-12 sm:py-16 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
             Technical <span className="bg-gradient-primary bg-clip-text text-transparent">Skills</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
             A comprehensive toolkit built through years of hands-on experience
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 mb-8 sm:mb-12">
           {skillCategories.map((category, index) => (
             <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-soft transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="text-xl">{category.title}</CardTitle>
+              <CardHeader className="pb-4">
+                <CardTitle className="text-lg sm:text-xl">{category.title}</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-3 sm:space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                      <span className="text-xs sm:text-sm font-medium truncate pr-2">{skill.name}</span>
+                      <span className="text-xs sm:text-sm text-muted-foreground flex-shrink-0">{skill.level}%</span>
                     </div>
-                    <Progress value={skill.level} className="h-2" />
+                    <Progress value={skill.level} className="h-1.5 sm:h-2" />
                   </div>
                 ))}
               </CardContent>
@@ -84,12 +84,12 @@ export const SkillsSection = () => {
 
         <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle>Tools & Technologies</CardTitle>
+            <CardTitle className="text-lg sm:text-xl">Tools & Technologies</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
               {tools.map((tool, index) => (
-                <Badge key={index} variant="outline" className="border-primary/30 hover:bg-gradient-card transition-colors">
+                <Badge key={index} variant="outline" className="border-primary/30 hover:bg-gradient-card transition-colors text-xs sm:text-sm">
                   {tool}
                 </Badge>
               ))}
