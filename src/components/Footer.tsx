@@ -47,9 +47,9 @@ export const Footer = () => {
           <div className="order-2 lg:order-3">
             <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Contact Info</h4>
             <div className="space-y-1 sm:space-y-2 text-muted-foreground text-xs sm:text-sm">
-              <p className="break-all">john.doe@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p className="break-all">chetansen2004@gmail.com</p>
+              <p>+91 6263587072</p>
+              <p>Arjun Nagar, Pateri, Satna, Madhya Pradesh, India</p>
             </div>
           </div>
         </div>
@@ -57,10 +57,10 @@ export const Footer = () => {
         <div className="border-t border-border pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
             <p className="text-muted-foreground text-xs sm:text-sm text-center sm:text-left">
-              © {currentYear} John Doe. All rights reserved.
+              © {currentYear} Chetan Sen. All rights reserved.
             </p>
             <p className="text-muted-foreground text-xs sm:text-sm flex items-center gap-1">
-              Made with <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-red-500" /> and lots of ☕
+              Made with <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-red-500" /> and lots of coffee☕
             </p>
           </div>
         </div>
