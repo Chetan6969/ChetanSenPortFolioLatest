@@ -51,18 +51,61 @@ export const HeroSection = () => {
             </a>
           </div>
 
-
-            <div className="flex gap-3 sm:gap-4 justify-center lg:justify-start">
+          <div className="flex gap-3 sm:gap-4 justify-center lg:justify-start">
+            {/* GitHub */}
+            <a
+              href="https://github.com/Chetan6969"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="ghost" size="sm" className="h-10 w-10">
                 <Github className="w-5 h-5" />
               </Button>
+            </a>
+            
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/chetan-sen-749a64284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="ghost" size="sm" className="h-10 w-10">
                 <Linkedin className="w-5 h-5" />
               </Button>
+            </a>
+            
+            {/* Email */}
+            <a href="mailto:chetansen2004@gmail.com">
               <Button variant="ghost" size="sm" className="h-10 w-10">
                 <Mail className="w-5 h-5" />
               </Button>
-            </div>
+            </a>
+            
+            {/* LeetCode */}
+            <a
+              href="https://leetcode.com/chetan2808/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="ghost" size="sm" className="h-10 w-10">
+                {/* Use any icon library or custom SVG for LeetCode */}
+                <img src="/assets/leetcode.svg" alt="LeetCode" className="w-5 h-5" />
+              </Button>
+            </a>
+            
+            {/* X (Twitter) */}
+            <a
+              href="https://x.com/ChetaN_offcial?t=duBwOqo60qQPOSkY1bF1Ww&s=09"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="ghost" size="sm" className="h-10 w-10">
+                {/* If using lucide-react, you can import Twitter icon; else custom SVG */}
+                <img src="/assets/x-icon.svg" alt="X" className="w-5 h-5" />
+              </Button>
+            </a>
+          </div>
+            
           </div>
 
           <div className="relative mt-8 lg:mt-0 order-first lg:order-last">
