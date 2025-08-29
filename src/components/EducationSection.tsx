@@ -5,22 +5,22 @@ import { GraduationCap, Award, BookOpen } from "lucide-react";
 export const EducationSection = () => {
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      location: "San Francisco, CA",
-      period: "2013 - 2017",
-      gpa: "3.8/4.0",
+      degree: "Bachelor of Technology in Computer Science",
+      institution: "AKS University ",
+      location: "Sherganj, Satna, Madhya Pradesh, India",
+      period: "2022 - Present",
+      cgpa: "8.1/10.0",
       description: "Focused on systems programming, network administration, and software engineering principles.",
       courses: ["Operating Systems", "Computer Networks", "Database Systems", "Software Engineering", "Data Structures"]
     },
     {
-      degree: "Associate Degree in Information Technology",
-      institution: "Community College of Technology",
-      location: "Oakland, CA",
-      period: "2011 - 2013",
-      gpa: "3.9/4.0",
-      description: "Foundation in computer systems, networking, and basic programming concepts.",
-      courses: ["Network Administration", "Linux Fundamentals", "Programming Logic", "Hardware Concepts"]
+      degree: "Higher Secondary Education (12th Grade)",
+      institution: "Govt. Higher Sec. School, Sohawal",
+      location: "Satna, Madhya Pradesh, India",
+      period: "2020 - 2022",
+      Percentage: "80%",
+      description: "Foundation in Physics, Chemistry and Mathematics (PCM).",
+      courses: ["Physics", "Chemistry", "Computer", "Mathematics"]
     }
   ];
 
@@ -91,7 +91,7 @@ export const EducationSection = () => {
                   <div className="space-y-1">
                     <p className="text-primary font-medium">{edu.institution}</p>
                     <p className="text-sm text-muted-foreground">{edu.location} • {edu.period}</p>
-                    <p className="text-sm font-medium">GPA: {edu.gpa}</p>
+                    <p className="text-sm font-medium">CGPA: {edu.cgpa}</p>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
