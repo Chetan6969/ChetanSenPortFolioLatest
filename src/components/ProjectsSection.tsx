@@ -3,56 +3,61 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 
+// ✅ Import images properly from src/assets
+import web3ChessImg from "@/assets/web3Chess.png";
+import hairFixImg from "@/assets/harifix.png";
+import customeMemoryAllocator from "@/assets/CustomMemoryAllocator.png";
+
 export const ProjectsSection = () => {
   const projects = [
     {
-      title: "Cloud Infrastructure Automation",
-      description: "Terraform-based infrastructure as code solution for AWS, managing multi-environment deployments with automated scaling and monitoring.",
-      image: "/placeholder.svg",
-      technologies: ["Terraform", "AWS", "Docker", "Kubernetes", "Prometheus"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "Web3 Chess Platform",
+      description: "Built a decentralized Web3 chess platform integrating blockchain-based gameplay, player rankings, and secure match ownership.",
+      image: web3ChessImg, // Updated to use imported image
+      technologies: ["React.js", "Next.js", "TailwindCSS", "Node.js", "Express.js", "Solidity", "Ethereum", "Ethers.js", "Hardhat", "IPFS", "MongoDB", "Metamask"],
+      liveUrl: "https://web3-chess.netlify.app/", // Replace with actual live URL
+      githubUrl: "https://github.com/Chetan6969/Ether-Chess-OTC", // Replace with actual GitHub URL
       featured: true
     },
     {
-      title: "DevOps Dashboard",
-      description: "Real-time monitoring dashboard built with React and Node.js, integrating multiple data sources for comprehensive infrastructure oversight.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Node.js", "PostgreSQL", "WebSocket", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#",
+      title: "He & She Hair Fix Unisex Salon",
+      description: "He and She Hairfix Saloon Website an online platform empowering salon business operations with features such as appointment booking, client management, and responsive design.",
+      image: hairFixImg,
+      technologies: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+      liveUrl: "https://heandshehairfix.netlify.app",
+      githubUrl: "https://github.com/Chetan6969/hairfix",
       featured: true
     },
     {
-      title: "Automated Deployment Pipeline",
-      description: "Jenkins-based CI/CD pipeline with automated testing, security scanning, and multi-stage deployments for containerized applications.",
-      image: "/placeholder.svg",
-      technologies: ["Jenkins", "Docker", "SonarQube", "Ansible", "GitLab"],
+      title: "CustomMemoryAllocator",
+      description: "Developed a custom memory allocator in C++ with a 2MB memory pool, supporting First Fit, Best Fit, and Buddy System allocation strategies, along with defragmentation and leak detection.",
+      image: customeMemoryAllocator,
+      technologies: ["C++", "Data Structures", "Memory Management", "Linked List", "Custom Allocator", "First Fit", "Best Fit", "Buddy System"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Chetan6969/CustommemoryAllocator",
       featured: false
     },
     {
-      title: "Server Monitoring System",
-      description: "Custom monitoring solution using Python and Grafana, providing detailed insights into server performance and automated alerting.",
+      title: "MyTube - YouTube Clone",
+      description: "Built a YouTube-inspired video streaming platform with user authentication, video uploads, and real-time streaming using a modern full-stack architecture.",
       image: "/placeholder.svg",
-      technologies: ["Python", "Grafana", "InfluxDB", "Bash", "Systemd"],
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT Authentication", "Cloudinary", "FFmpeg", "TailwindCSS"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "http://github.com/Chetan6969/yt_project",
       featured: false
     },
     {
-      title: "E-commerce Platform",
-      description: "Full-stack e-commerce solution with React frontend, Node.js backend, and complete DevOps deployment pipeline.",
+      title: "Personal Portfolio",
+      description: "Designed and developed a responsive personal portfolio website showcasing projects, skills, and experience with modern UI components and smooth animations.",
       image: "/placeholder.svg",
-      technologies: ["React", "Node.js", "MongoDB", "Redis", "Stripe"],
+      technologies: ["React.js", "Next.js", "TailwindCSS", "TypeScript", "ShadCN/UI", "Lucide Icons", "Framer Motion"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Chetan6969/sysadmin-devops-fullstack-showcase",
       featured: false
     },
     {
       title: "Log Analysis Tool",
-      description: "Python-based log analysis tool with machine learning capabilities for predictive maintenance and anomaly detection.",
+      description: "Python-based log analysis tool capabilities for predictive maintenance and anomaly detection.",
       image: "/placeholder.svg",
       technologies: ["Python", "Scikit-learn", "Elasticsearch", "Kibana", "Flask"],
       liveUrl: "#",
@@ -81,7 +86,7 @@ export const ProjectsSection = () => {
           {featuredProjects.map((project, index) => (
             <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm hover:shadow-soft transition-all duration-300 group">
               <div className="aspect-video bg-gradient-card rounded-t-lg flex items-center justify-center">
-                <div className="text-3xl sm:text-4xl opacity-50">🚀</div>
+                <img src={project.image} alt={project.title} className="object-cover w-full h-full rounded-t-lg" />
               </div>
               <CardHeader className="pb-4">
                 <CardTitle className="group-hover:text-primary transition-colors text-lg sm:text-xl">{project.title}</CardTitle>
@@ -96,13 +101,17 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 pt-2">
-                  <Button variant="gradient" size="sm" className="w-full sm:w-auto">
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
+                  <Button variant="gradient" size="sm" className="w-full sm:w-auto" asChild>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4" />
+                      Live Demo
+                    </a>
                   </Button>
-                  <Button variant="outline" size="sm" className="w-full sm:w-auto">
-                    <Github className="w-4 h-4" />
-                    Code
+                  <Button variant="outline" size="sm" className="w-full sm:w-auto" asChild>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="w-4 h-4" />
+                      Code
+                    </a>
                   </Button>
                 </div>
               </CardContent>
@@ -134,11 +143,15 @@ export const ProjectsSection = () => {
                     )}
                   </div>
                   <div className="flex gap-2">
-                    <Button variant="ghost" size="sm" className="h-8 px-2 flex-1">
-                      <ExternalLink className="w-3 h-3" />
+                    <Button variant="ghost" size="sm" className="h-8 px-2 flex-1" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
                     </Button>
-                    <Button variant="ghost" size="sm" className="h-8 px-2 flex-1">
-                      <Github className="w-3 h-3" />
+                    <Button variant="ghost" size="sm" className="h-8 px-2 flex-1" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-3 h-3" />
+                      </a>
                     </Button>
                   </div>
                 </CardContent>

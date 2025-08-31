@@ -29,7 +29,7 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
             {/* Download CV Button */}
             <a
-              href="/assets/chetanLatestResume.pdf"
+              href="https://drive.google.com/file/d/1kRSYC4zEXuCC1ynIcpGRBfWFGSrr82K0/view?usp=drive_link"
               download="Chetan_Sen_Resume.pdf"
               className="w-full sm:w-auto"
             >
