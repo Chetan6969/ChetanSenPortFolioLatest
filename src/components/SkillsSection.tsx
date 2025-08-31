@@ -49,8 +49,10 @@ export const SkillsSection = () => {
   ];
 
   const tools = [
-    "Git", "Nginx", "Apache", "Redis", "ElasticSearch", "Grafana", "Prometheus", 
-    "Zabbix", "Vim/Neovim", "VS Code", "Postman", "Slack", "Jira"
+    "Linux (RHEL, Centos, fedora, Ubantu, Kali)","MERN Stack", "Version Control (Git & Github)","Config Management (Ansible)",
+    "Containerization (Docker)", "Orchestration (Kubernetes)", "CI/CD (Jenkins, GitLab CI)", "Cloud (AWS)",
+    "Infrastructure as Code (Terraform)", "Monitoring (Prometheus, Grafana)", "Databases (PostgreSQL, MongoDB)",
+    "Scripting (Bash, Python)", "Web Servers (Nginx, Apache)", "Networking Basics", "Security Best Practices"
   ];
 
   const handleSkillHover = (categoryIndex, skillIndex, targetLevel) => {
