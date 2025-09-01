@@ -63,7 +63,7 @@ export const SkillsSection = () => {
     setAnimatedSkills(prev => ({ ...prev, [skillKey]: 0 }));
     
     // Start animation
-    const animationDuration = 1500; // 1.5 seconds
+    const animationDuration = 350; // 1.5 seconds
     const steps = 60; // 60 fps
     const increment = targetLevel / steps;
     let currentStep = 0;
@@ -79,7 +79,7 @@ export const SkillsSection = () => {
       }
     };
     
-    setTimeout(animate, 50); // Small delay before starting
+    setTimeout(animate, 25); // Small delay before starting
   };
 
   const handleSkillLeave = (categoryIndex, skillIndex) => {
