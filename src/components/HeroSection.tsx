@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Download, Github, Linkedin, Mail, Terminal } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
-import leetcodeIcon from "@/assets/leetcode.png";
-import xIcon from "@/assets/x-icon.png";
+import { Download, Github, Linkedin, Mail, Terminal, Twitter, Code2 } from "lucide-react"; 
+// ⬆️ Added Twitter & Code2 from lucide-react
+
+// ✅ Changed to your portfolio image
+import heroImage from "@/assets/chetan portfolio.png"; 
 
 export const HeroSection = () => {
   return (
@@ -101,7 +102,7 @@ export const HeroSection = () => {
                 </Button>
               </a>
 
-              {/* LeetCode */}
+              {/* LeetCode (using Code2 icon from lucide-react) */}
               <a
                 href="https://leetcode.com/chetan2808/"
                 target="_blank"
@@ -113,7 +114,7 @@ export const HeroSection = () => {
                   className="h-10 w-10"
                   aria-label="LeetCode"
                 >
-                  <img src={leetcodeIcon} alt="LeetCode" className="w-5 h-5" />
+                  <Code2 className="w-5 h-5" /> {/* ✅ replaced image with icon */}
                 </Button>
               </a>
 
@@ -129,24 +130,26 @@ export const HeroSection = () => {
                   className="h-10 w-10"
                   aria-label="X (Twitter)"
                 >
-                  <img src={xIcon} alt="X" className="w-5 h-5" />
+                  <Twitter className="w-5 h-5" /> {/* ✅ replaced image with icon */}
                 </Button>
               </a>
             </div>
           </div>
 
-          <div className="relative mt-8 lg:mt-0 order-first lg:order-last">
-            <div className="relative rounded-2xl overflow-hidden shadow-glow max-w-md mx-auto lg:max-w-none">
-              <img
-                src={heroImage}
-                alt="Developer workspace with multiple screens and code"
-                className="w-full h-auto object-cover aspect-[4/3]"
-              />
-              <div className="absolute inset-0 bg-gradient-primary opacity-20"></div>
-            </div>
-            <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 w-16 h-16 sm:w-24 sm:h-24 bg-gradient-hero rounded-full blur-xl opacity-60"></div>
-            <div className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 w-20 h-20 sm:w-32 sm:h-32 bg-gradient-primary rounded-full blur-xl opacity-40"></div>
-          </div>
+        <div className="relative mt-8 lg:mt-0 order-first lg:order-last">
+         <div className="relative rounded-2xl overflow-hidden shadow-glow max-w-md mx-auto lg:max-w-none">
+          <img
+            src={heroImage} // ✅ your portfolio image
+            alt="Chetan Sen Portfolio"
+            className="w-full h-auto object-cover aspect-[4/3]"
+          />
+         {/* ❌ Removed gradient overlay */}
+         </div>
+         {/* Removed decorative gradient divs */}
+         {/* <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 w-16 h-16 sm:w-24 sm:h-24 bg-gradient-hero rounded-full blur-xl opacity-60"></div> */}
+         {/* <div className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 w-20 h-20 sm:w-32 sm:h-32 bg-gradient-primary rounded-full blur-xl opacity-40"></div> */}
+        </div>
+
         </div>
       </div>
     </section>
